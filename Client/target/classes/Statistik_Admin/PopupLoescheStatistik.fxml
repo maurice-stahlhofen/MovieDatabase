@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Statistik.PopupController">
+   <children>
+      <ImageView fx:id="confirm" fitHeight="36.0" fitWidth="49.0" layoutX="139.0" layoutY="131.0" onMouseClicked="#confirmPopup" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/checkliste.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="cancel" fitHeight="36.0" fitWidth="49.0" layoutX="243.0" layoutY="131.0" onMouseClicked="#cancelPopup" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/abgesagt.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <CheckBox fx:id="Bewertung" layoutX="122.0" layoutY="66.0" mnemonicParsing="false" text="Bewertungen löschen" textFill="#ff9800">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="GeseheneFilme" layoutX="122.0" layoutY="97.0" mnemonicParsing="false" text="Gesehene Filme löschen" textFill="#ff9800">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Text fx:id="reportTxt" fill="#3dcd00" layoutX="21.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="21.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#ff5500" layoutX="42.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felder, die bei den ausgewählten Filmen gelöscht werden sollen:" textAlignment="CENTER" wrappingWidth="341.0">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#ff5500" layoutX="157.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doppelklicken" textAlignment="CENTER" wrappingWidth="112.0">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <InnerShadow>
+         <color>
+            <Color red="1.0" green="0.6000000238418579" opacity="0.7099236845970154" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>

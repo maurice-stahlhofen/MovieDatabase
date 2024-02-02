@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Statistik.PopupPDFController">
+    <children>
+        <Text fx:id="reportTxt" fill="#3dcd00" layoutX="21.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="21.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fx:id="pdfText" fill="#ff5500" layoutX="140.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PDF wurde erstellt" textAlignment="CENTER" wrappingWidth="171.0">
+            <font>
+                <Font name="Calibri Bold" size="16.0" />
+            </font>
+        </Text>
+      <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="83.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/like.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="okButton" layoutX="168.0" layoutY="136.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="91.0" text="OK" textFill="#ffae00">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="0.4571428596973419" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Text fx:id="pdfNameText" fill="#ff5500" layoutX="140.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="171.0">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Text>
+    </children>
+    <effect>
+        <InnerShadow>
+            <color>
+                <Color red="1.0" green="0.6000000238418579" opacity="0.7099236845970154" />
+            </color>
+        </InnerShadow>
+    </effect>
+</AnchorPane>

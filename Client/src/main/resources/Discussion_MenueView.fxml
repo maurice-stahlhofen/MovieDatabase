@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Soziales.Discussion.Disc_MenueController">
+   <children>
+      <Button fx:id="discussionSearch_button" layoutX="213.0" layoutY="200.0" mnemonicParsing="false" onAction="#discussionSerach_view" text="Diskussionsforen durchsuchen" />
+      <Button fx:id="myDiscussions_button" layoutX="229.0" layoutY="148.0" mnemonicParsing="false" onAction="#myDiscussions_View" text="Meine Diskussionsforen" />
+      <Label layoutX="168.0" layoutY="53.0" text="Movie-Diskussion Menüpunkt" textFill="#ff9900">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="startviewbutton" layoutX="268.0" layoutY="333.0" mnemonicParsing="false" onAction="#startview" text="Startseite" />
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="114.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/chatten.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="invitationButton" layoutX="233.0" layoutY="249.0" mnemonicParsing="false" onAction="#invitationPressed" text="Einladungen verwalten" />
+   </children>
+</AnchorPane>

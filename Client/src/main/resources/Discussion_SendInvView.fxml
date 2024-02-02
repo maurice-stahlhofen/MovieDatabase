@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Soziales.Discussion.Disc_SendInvController">
+   <children>
+      <ListView fx:id="ListView_einladung" layoutX="67.0" layoutY="93.0" prefHeight="200.0" prefWidth="500.0" />
+      <Text layoutX="70.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diskussionsgruppe Einladungen versenden">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="homepageButton" layoutX="501.0" layoutY="317.0" mnemonicParsing="false" onAction="#homepagePressed" text="Startseite" />
+      <Button fx:id="backButton" layoutX="432.0" layoutY="317.0" mnemonicParsing="false" onAction="#backPressed" text="Zurück" />
+      <Button fx:id="refreshButton" layoutX="222.0" layoutY="317.0" mnemonicParsing="false" onAction="#refreshPressed" text="Aktualisieren" />
+      <Button fx:id="sendInviteButton" layoutX="67.0" layoutY="317.0" mnemonicParsing="false" onAction="#sendInvitePressed" text="Einladung verschicken" />
+   </children>
+</AnchorPane>

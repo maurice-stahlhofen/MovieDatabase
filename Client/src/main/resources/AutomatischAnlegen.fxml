@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Anlegen.AutomatischAnlegenController">
+   <children>
+      <Label  layoutX="87.0" layoutY="39.0" text="Filme automatisch anlegen">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="zeitraumVonField" layoutX="306.0" layoutY="122.0" prefHeight="25.0" prefWidth="87.0" promptText="Von" />
+      <Label  layoutX="101.0" layoutY="121.0" text="Zeitraum">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="zeitraumBisField" layoutX="455.0" layoutY="122.0" prefHeight="25.0" prefWidth="87.0" promptText="Bis" />
+      <Label  layoutX="99.0" layoutY="187.0" text="Kategorie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kategorieField" layoutX="349.0" layoutY="188.0" promptText="Kategorie" />
+      <TextField fx:id="anzahlField" layoutX="349.0" layoutY="266.0" promptText="Anzahl" />
+      <Label  layoutX="13.0" layoutY="265.0" text="Anzahl der anzulegenden Filme">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="anlegenButton" layoutX="276.0" layoutY="306.0" mnemonicParsing="false" onAction="#automatischAnlegenPressed" text="Anlegen" />
+      <Button fx:id="startseiteButton" layoutX="244.0" layoutY="343.0" mnemonicParsing="false" onAction="#startseitePressed" text="Zurück zur Startseite" />
+   </children>
+</AnchorPane>

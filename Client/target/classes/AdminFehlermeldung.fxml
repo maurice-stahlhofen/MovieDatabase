@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Fehlermeldung.AdminFehlermeldung">
+   <children>
+      <Text fill="#ff9900" layoutX="146.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fehlermeldungen">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <TableView fx:id="listeFehlermeldungen" layoutX="49.0" layoutY="100.0" prefHeight="216.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="filmnameColumn" editable="false" prefWidth="114.0" text="Filmname" />
+          <TableColumn fx:id="nachrichtColumn" editable="false" prefWidth="297.9999694824219" text="Fehlernachricht" />
+            <TableColumn fx:id="dateColumn" editable="false" minWidth="0.0" prefWidth="92.0" text="Datum" />
+            <TableColumn fx:id="idColumn" editable="false" prefWidth="75.0" sortable="false" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <Button fx:id="startseiteButton" layoutX="427.0" layoutY="345.0" mnemonicParsing="false" onAction="#startseitePressed" text="Zurück zur Startseite" />
+      <Text fill="RED" layoutX="431.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="bearbeitetButton" layoutX="146.0" layoutY="345.0" mnemonicParsing="false" onAction="#bearbeitetPressed" text="Fehlermeldung bearbeitet" />
+      <Button fx:id="anzeigenButton" layoutX="49.0" layoutY="345.0" mnemonicParsing="false" onAction="#anzeigenPressed" text="anzeigen" />
+      <Label fx:id="keineAuswahl" layoutX="49.0" layoutY="316.0" prefHeight="17.0" prefWidth="199.0" textFill="RED" />
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="62.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/ReoprtAdmin.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

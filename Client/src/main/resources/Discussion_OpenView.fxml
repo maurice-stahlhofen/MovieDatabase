@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Soziales.Discussion.Disc_OpenController">
+   <children>
+      <Button fx:id="openDiscussion_Button" layoutX="47.0" layoutY="337.0" mnemonicParsing="false" onAction="#openDiscussion" prefWidth="102.0" text="Forum öffnen" />
+      <Button fx:id="startview" layoutX="414.0" layoutY="337.0" mnemonicParsing="false" onAction="#switchtostartview" text="Startseite" />
+      <ListView fx:id="discussion_list" layoutX="46.0" layoutY="73.0" prefHeight="251.0" prefWidth="507.0" />
+      <Text fill="#ff9900" layoutX="83.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wähle ein Diskussionforum zum Austauschen aus:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="24.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/chatten.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back_Button" layoutX="500.0" layoutY="337.0" mnemonicParsing="false" onAction="#back_View" text="Zurück" />
+      <Label fx:id="Fehlermeldung" layoutX="47.0" layoutY="369.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="inviteFriendButton" layoutX="168.0" layoutY="337.0" mnemonicParsing="false" onAction="#inviteFriendPressed" text="Freund einladen" />
+      <Button fx:id="setModeratorButton" layoutX="281.0" layoutY="337.0" mnemonicParsing="false" onAction="#setModeratorPressed" text="Moderator setzen" />
+   </children>
+</AnchorPane>

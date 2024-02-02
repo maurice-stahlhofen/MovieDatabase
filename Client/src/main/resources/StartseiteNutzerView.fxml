@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.StartseitenController.StartseiteNutzerController">
+   <children>
+      <Button fx:id="filmeSuchenButton" layoutX="109.0" layoutY="159.0" mnemonicParsing="false" onAction="#filmeSuchenPressed" prefHeight="25.0" prefWidth="120.0" text="Filme suchen" />
+      <Button fx:id="chatButton" layoutX="344.0" layoutY="240.0" mnemonicParsing="false" onAction="#chatButtonPressed" prefHeight="25.0" prefWidth="118.0" text="Chat" />
+      <Text fill="#ff9d00" layoutX="74.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie-Chat">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="registerButton" layoutX="464.0" layoutY="359.0" mnemonicParsing="false" onAction="#registerPressed" prefHeight="26.0" prefWidth="118.0" text="Logout" />
+      <Text fill="#ff9500" layoutX="143.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filme">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="reportButton" layoutX="464.0" layoutY="316.0" mnemonicParsing="false" onAction="#reportPressed" prefHeight="22.0" prefWidth="118.0" text="Report senden" />
+      <ImageView fx:id="nutzerProfilbild" fitHeight="54.0" fitWidth="51.0" layoutX="537.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/startseite.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="userSearchButton" layoutX="343.0" layoutY="159.0" mnemonicParsing="false" onAction="#userSearchPressed" prefHeight="25.0" prefWidth="120.0" text="Nutzer suchen" />
+      <Button fx:id="userViewButton" layoutX="444.0" layoutY="86.0" mnemonicParsing="false" onAction="#userViewPressed" prefHeight="26.0" prefWidth="120.0" text="Mein Profil" />
+      <Button fx:id="freundeButton" layoutX="344.0" layoutY="199.0" mnemonicParsing="false" onAction="#freundePressed" prefHeight="25.0" prefWidth="118.0" text="Freunde" />
+      <Label fx:id="nutzerName" alignment="CENTER_RIGHT" layoutX="317.0" layoutY="26.0" prefHeight="27.0" prefWidth="212.0" text="Nutzer Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line endX="343.0" layoutX="259.0" layoutY="72.0" startX="-259.0" />
+      <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/film.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ff9500" layoutX="363.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soziales">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="gruppenButton" layoutX="344.0" layoutY="280.0" mnemonicParsing="false" onAction="#gruppenButtonPressed" prefHeight="25.0" prefWidth="118.0" text="Gruppen" />
+      <Button fx:id="statistikButton" layoutX="109.0" layoutY="240.0" mnemonicParsing="false" onAction="#statistikenPressed" prefHeight="22.0" prefWidth="118.0" text="Statistiken" />
+      <Button fx:id="filmEinladenButton" layoutX="109.0" layoutY="199.0" mnemonicParsing="false" onAction="#filmEinladenPressed" prefHeight="22.0" prefWidth="118.0" text="Film Einladungen" />
+      <Button fx:id="vorschlaegeButton" layoutX="109.0" layoutY="280.0" mnemonicParsing="false" onAction="#vorschlaegePressed" prefHeight="25.0" prefWidth="118.0" text="Filmvorschläge" />
+   </children>
+   <effect>
+      <InnerShadow choke="0.33">
+         <color>
+            <Color red="1.0" green="0.8117647171020508" blue="0.3019607961177826" />
+         </color></InnerShadow>
+   </effect>
+
+</AnchorPane>

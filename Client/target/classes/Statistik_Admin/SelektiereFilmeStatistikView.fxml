@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Statistik.SelectFilmStatistikController">
+   <center>
+      <AnchorPane prefHeight="327.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="filmView" layoutX="13.0" layoutY="2.0" onMouseClicked="#getFilm" prefHeight="288.0" prefWidth="612.0" />
+            <TextField fx:id="resultText" editable="false" layoutX="157.0" layoutY="294.0" onAction="#setResultData" prefHeight="26.0" prefWidth="466.0" promptText="noch nichts ausgewählt">
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor></TextField>
+            <Text fill="#ffaa00" layoutX="14.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deine Auswahl:">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="78.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="filmIDTxt" layoutX="411.0" layoutY="14.0" prefHeight="25.0" prefWidth="167.0" promptText="FillmID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text fill="#ffaa00" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filme auswählen">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="wrongFilmID" fill="RED" layoutX="372.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="245.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="filmIdAddButton" fitHeight="29.0" fitWidth="33.0" layoutX="588.0" layoutY="12.0" onMouseClicked="#addFilmID" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/plus.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="filmIDTxtRemove" layoutX="196.0" layoutY="14.0" prefHeight="25.0" prefWidth="167.0" promptText="FillmID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <ImageView fx:id="filmIdRemoveButton" fitHeight="29.0" fitWidth="33.0" layoutX="370.0" layoutY="12.0" onMouseClicked="#removeFilmID" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/minus.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fx:id="wrongFilmIDRemove" fill="RED" layoutX="137.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="248.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="allButton" fitHeight="32.0" fitWidth="33.0" layoutX="14.0" layoutY="35.0" onMouseClicked="#selectALLFilms" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/alle.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="43.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="550.0" layoutY="11.0" mnemonicParsing="false" onAction="#backToStatistik" prefHeight="25.0" prefWidth="74.0" text="Zurück" />
+            <Button fx:id="saveButton" layoutX="15.0" layoutY="11.0" mnemonicParsing="false" onAction="#saveAndSwitchToTable" prefHeight="25.0" prefWidth="528.0" text="Speichern" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

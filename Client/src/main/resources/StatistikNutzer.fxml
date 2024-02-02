@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Statistik.StatistikNutzerController">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="34.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/statistik.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="86.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Persönliche Statistik" wrappingWidth="245.340087890625">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6113744075829385" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.40238094329833984" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.6333333253860474" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button fx:id="startseiteButton" layoutX="545.0" layoutY="395.0" mnemonicParsing="false" onAction="#startseitePressed" text="Zurück zur Startseite" />
+      <ListView fx:id="lieblingsSchauspielerList" layoutX="34.0" layoutY="124.0" prefHeight="214.0" prefWidth="185.0" />
+      <ListView fx:id="lieblingsKategorieList" layoutX="244.0" layoutY="124.0" prefHeight="214.0" prefWidth="185.0" />
+      <ListView fx:id="lieblingsFilmList" layoutX="453.0" layoutY="124.0" prefHeight="214.0" prefWidth="185.0" />
+      <Text fill="#ff9900" layoutX="34.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieblingsschauspieler" textAlignment="CENTER" wrappingWidth="183.33333333333326">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#ff9900" layoutX="244.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieblingskategorien" textAlignment="CENTER" wrappingWidth="183.33333333333326">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#ff9900" layoutX="453.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieblingsfilme" textAlignment="CENTER" wrappingWidth="183.33333333333326">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zeit der geschauten Filme:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="watchTime" layoutX="263.0" layoutY="358.0" prefHeight="25.0" prefWidth="100.0" text="0 min">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="zeitraumLabel" layoutX="392.0" layoutY="64.0" prefHeight="25.0" prefWidth="211.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TitledPane fx:id="zeitraumWahl" expanded="false" layoutX="392.0" layoutY="39.0" prefHeight="180.0" prefWidth="245.0" text="Zeitraum Wählen">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff4d" height="150.0" layoutX="1.0" layoutY="2.0" stroke="#ffa100" strokeType="INSIDE" width="240.0" />
+                  <DatePicker fx:id="startDate" editable="false" layoutX="45.0" layoutY="29.0" prefHeight="25.0" prefWidth="125.0" promptText="Start" />
+                  <DatePicker fx:id="endDate" editable="false" layoutX="45.0" layoutY="62.0" prefHeight="25.0" prefWidth="125.0" promptText="Ende" />
+                  <Text layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zeitraum">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="15.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bis:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="clearDate" fitHeight="38.0" fitWidth="41.0" layoutX="191.0" layoutY="35.0" nodeOrientation="INHERIT" onMouseClicked="#clearDatePressed" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/mulleimer.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="reloadButton" fitHeight="41.0" fitWidth="41.0" layoutX="150.0" layoutY="100.0" onMouseClicked="#reloadStatistics" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/sync.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Text layoutX="13.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="von:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="erweiterteStatistikBox" layoutX="45.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="83.0" text="Erweiterte Statistik" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <Text layoutX="54.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anzahl der gesehenen Filme:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="anzahlDerFilme" layoutX="263.0" layoutY="383.0" prefHeight="25.0" prefWidth="54.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

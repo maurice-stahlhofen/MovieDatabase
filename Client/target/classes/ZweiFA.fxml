@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="196.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.login.TwoFAClientController">
+   <children>
+      <Button fx:id="confirmButton" layoutX="271.0" layoutY="115.0" mnemonicParsing="false" onAction="#checkCode" prefHeight="26.0" prefWidth="194.0" text="Bestätigen" textFill="#ff9000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="271.0" layoutY="152.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="26.0" prefWidth="194.0" text="Abbrechen" textFill="#ff6e00">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#ff9d00" layoutX="26.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bitte den Code eingeben: " wrappingWidth="228.90234375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="codeText" layoutX="271.0" layoutY="77.0" prefHeight="26.0" prefWidth="193.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text fill="#ff9d00" layoutX="26.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eine E-Mail wurde verschickt" wrappingWidth="228.90234375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="344.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/passwort.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow choke="0.11">
+         <color>
+            <Color red="1.0" green="0.615686297416687" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>

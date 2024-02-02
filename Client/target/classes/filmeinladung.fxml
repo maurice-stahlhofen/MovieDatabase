@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Filmeinladung.FilmeinladungverschickenController">
+   <children>
+      <ListView fx:id="nutzerListview" layoutX="23.0" layoutY="46.0" prefHeight="251.0" prefWidth="555.0" />
+      <Text layoutX="161.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filmeinladung verschicken">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="filmtitelField" layoutX="23.0" layoutY="306.0" prefHeight="25.0" prefWidth="70.0" promptText="Filmtitel" />
+      <DatePicker fx:id="datePicker" layoutX="98.0" layoutY="306.0" prefHeight="25.0" prefWidth="87.0" promptText="Datum" />
+      <TextField fx:id="uhrzeitField" layoutX="192.0" layoutY="306.0" prefHeight="25.0" prefWidth="55.0" promptText="Uhrzeit" />
+      <TextField fx:id="textField" layoutX="253.0" layoutY="306.0" prefHeight="25.0" prefWidth="324.0" promptText="Text (optional)" />
+      <Button fx:id="einladuntverschickenButton" layoutX="23.0" layoutY="342.0" mnemonicParsing="false" onAction="#verschickenPressed" text="Einladung verschicken" />
+      <Button fx:id="aktualisierenButton" layoutX="163.0" layoutY="342.0" mnemonicParsing="false" onAction="#aktualisierenPressed" text="Aktualisieren" />
+      <Button fx:id="startseiteButton" layoutX="511.0" layoutY="342.0" mnemonicParsing="false" onAction="#startseitePressed" text="Startseite" />
+      <Button fx:id="zurueckButton" layoutX="451.0" layoutY="342.0" mnemonicParsing="false" onAction="#zurueckPressed" text="Zurück" />
+   </children>
+</AnchorPane>

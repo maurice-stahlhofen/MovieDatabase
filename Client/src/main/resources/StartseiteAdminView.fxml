@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.StartseitenController.StartseiteAdminController">
+   <children>
+      <Button fx:id="filmAnlegen" layoutX="89.0" layoutY="183.0" mnemonicParsing="false" onAction="#insertPressed" prefHeight="25.0" prefWidth="118.0" text="Film anlegen" />
+      <Text fill="#ff7900" layoutX="347.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Film-Verwaltung">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="filmImport" layoutX="89.0" layoutY="237.0" mnemonicParsing="false" onAction="#importPressed" prefHeight="25.0" prefWidth="118.0" text="Filme importieren" />
+      <Button fx:id="filmBearbeiten" layoutX="89.0" layoutY="293.0" mnemonicParsing="false" onAction="#editPressed" prefHeight="25.0" prefWidth="118.0" text="Film bearbeiten" textAlignment="CENTER" />
+      <Button fx:id="fehlermeldung" layoutX="355.0" layoutY="293.0" mnemonicParsing="false" onAction="#fehlermeldungPressed" prefHeight="25.0" prefWidth="118.0" text="Fehlermeldungen" />
+      <Text fill="#ff9d00" layoutX="78.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie-Chat">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="registerButton" layoutX="461.0" layoutY="360.0" mnemonicParsing="false" onAction="#registerPressed" prefHeight="25.0" prefWidth="118.0" text="Logout" />
+      <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="534.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/admin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="statistik" layoutX="355.0" layoutY="183.0" mnemonicParsing="false" onAction="#getStatistik" prefHeight="25.0" prefWidth="118.0" text="Statistik" textAlignment="CENTER" />
+      <Line endX="343.0" layoutX="256.0" layoutY="83.0" startX="-259.0" />
+      <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="22.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/film.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="adminName" alignment="CENTER_RIGHT" layoutX="308.0" layoutY="47.0" prefHeight="27.0" prefWidth="212.0" text="Admin Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text fill="#ff9500" layoutX="73.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filme verwalten">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#ff9500" layoutX="379.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistik">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#ff9500" layoutX="349.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nutzer-Reports">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <InnerShadow choke="0.33">
+         <color>
+            <Color red="1.0" green="0.8117647171020508" blue="0.3019607961177826" />
+         </color></InnerShadow>
+   </effect>
+
+</AnchorPane>

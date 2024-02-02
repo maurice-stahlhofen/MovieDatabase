@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Soziales.Discussion.Disc_HandleInviteController">
+   <children>
+      <Text fill="#ff9900" layoutX="150.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freundeseinladungen verwalten">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="ListView_invitation" layoutX="44.0" layoutY="82.0" prefHeight="200.0" prefWidth="512.0" />
+      <Button fx:id="startButton" layoutX="490.0" layoutY="304.0" mnemonicParsing="false" onAction="#startPressed" text="Startseite" />
+      <Button fx:id="backButton" layoutX="409.0" layoutY="304.0" mnemonicParsing="false" onAction="#backPressed" text="Zurück" />
+      <Button fx:id="acceptButton" layoutX="44.0" layoutY="304.0" mnemonicParsing="false" onAction="#acceptPressed" text="Annehmen" />
+      <Button fx:id="declineButton" layoutX="150.0" layoutY="304.0" mnemonicParsing="false" onAction="#declinePressed" text="Ablehnen" />
+      <Button fx:id="refreshButton" layoutX="258.0" layoutY="304.0" mnemonicParsing="false" onAction="#refreshPressed" text="Aktualisieren" />
+   </children>
+</AnchorPane>

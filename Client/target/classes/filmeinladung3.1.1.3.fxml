@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Filmeinladung.FilmeinladungVerwaltenController">
+   <children>
+      <Text layoutX="254.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Einladungen verwalten">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ListView fx:id="ausstehendeEinladungen" layoutX="24.0" layoutY="93.0" prefHeight="200.0" prefWidth="307.0" />
+      <Text layoutX="75.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ausstehende Einladungen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="429.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angenommene Einladungen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="angenommeneEinladungen" layoutX="388.0" layoutY="93.0" prefHeight="200.0" prefWidth="307.0" />
+      <Button fx:id="annehmenButton" layoutX="24.0" layoutY="302.0" mnemonicParsing="false" onAction="#annehmenPressed" text="Annehmen" />
+      <Button fx:id="ablehenPressed" layoutX="111.0" layoutY="302.0" mnemonicParsing="false" onAction="#ablehnenPressed" text="Ablehnen" />
+      <Button fx:id="loeschenButton" layoutX="388.0" layoutY="302.0" mnemonicParsing="false" onAction="#loeschenPressed" text="Erledigt" />
+      <Button fx:id="startseiteButton" layoutX="639.0" layoutY="361.0" mnemonicParsing="false" onAction="#startseitePressed" text="Startseite" />
+      <Button fx:id="zurueckButton" layoutX="574.0" layoutY="361.0" mnemonicParsing="false" onAction="#zurueckPressed" text="Zurück" />
+      <Button fx:id="aktualisierenButton" layoutX="318.0" layoutY="361.0" mnemonicParsing="false" onAction="#aktualisierenPressed" text="Aktualisieren" />
+   </children>
+</AnchorPane>

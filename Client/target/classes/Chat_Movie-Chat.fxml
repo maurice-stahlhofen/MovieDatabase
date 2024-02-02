@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.client.Soziales.Chat.MovieChatController">
+   <children>
+      <Separator layoutX="8.0" layoutY="45.0" prefHeight="3.0" prefWidth="591.0" />
+      <Separator layoutX="5.0" layoutY="324.0" prefHeight="3.0" prefWidth="591.0" />
+      <ListView fx:id="message_view" layoutX="5.0" layoutY="49.0" prefHeight="272.0" prefWidth="591.0" />
+      <TextField fx:id="message" layoutX="10.0" layoutY="327.0" onAction="#onEnter" prefHeight="27.0" prefWidth="580.0" promptText="Nachricht hier eingeben" />
+      <Button fx:id="back_button" layoutX="518.0" layoutY="362.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="72.0" text="Zurück" />
+      <Label fx:id="participantname" layoutX="312.0" layoutY="4.0" prefHeight="35.0" prefWidth="287.0" textFill="#ff5500">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="scroll_button" layoutX="10.0" layoutY="362.0" mnemonicParsing="false" onAction="#scrollOnOff" prefHeight="25.0" prefWidth="115.0" text="Switch Scroll" />
+      <Button fx:id="startview_button" layoutX="440.0" layoutY="362.0" mnemonicParsing="false" onAction="#startview" prefHeight="25.0" prefWidth="72.0" text="Startseite" />
+      <Text fill="#ff9900" layoutX="71.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie-Chat-Teilnehmer:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="icon" fitHeight="46.0" fitWidth="46.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/chatten.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
